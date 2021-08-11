@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/searchClass/index",
+    "pages/wode/index",
+    "pages/collect/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+    "tabBar": {
+      "position": "bottom",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "selectedIconPath": "images/shouye.png",
+          "iconPath": "images/shouye2.png"
+        },
+        {
+          "pagePath": "pages/searchClass/index",
+          "text": "分类",
+          "selectedIconPath": "images/fenlei.png",
+          "iconPath": "images/fenlei2.png"
+        },
+        {
+          "pagePath": "pages/collect/index",
+          "text": "收藏",
+          "selectedIconPath": "images/shoucang.png",
+          "iconPath": "images/shoucang2.png"
+        },
+        {
+          "pagePath": "pages/wode/index",
+          "text": "我的",
+          "selectedIconPath": "images/wode.png",
+          "iconPath": "images/wode2.png"
+        }
+      ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}
