@@ -58,7 +58,8 @@ Page({
     }
   },
 
-  search: function(value) {
+
+  search: function (value) {
     console.log(value)
   },
 
