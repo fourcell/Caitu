@@ -1,0 +1,7 @@
+<view class="component_block" bindtap="toPath" data-path="{{myProperty.path}}">
+  <view class="component_block_title">
+    <view class="component_block_title_title">{{myProperty.title}}</view>
+    <view class="component_block_title_remark">{{myProperty.span}}</view>
+  </view>
+  <image class="component_imgage" src="{{myProperty.icon}}" />
+</view>

@@ -1,4 +1,5 @@
 {
   "usingComponents": {
+    "home-block": "/pages/component/block/block"
   }
 }
