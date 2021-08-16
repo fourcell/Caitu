@@ -1,1 +1,27 @@
 /* pages/component/card/card.wxss */
+.component_card {
+  margin: 20rpx 0 10rpx;
+  /* border-bottom: 1rpx solid #999; */
+  padding-bottom: 15rpx;
+}
+
+.component_card>.component_card_image {
+  display: block;
+  height: 400rpx;
+  width: 100%;
+}
+
+.component_card>.component_card_title {
+  font-size: 30rpx;
+  font-weight: bolder;
+  margin-top: 10rpx;
+}
+
+.component_card>.component_card_dateil {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.component_card>.component_card_dateil>text {
+  margin-right: 20rpx;
+}

@@ -1,2 +1,1 @@
-<!--pages/wode/index.wxml-->
-<text>pages/wode/index.wxml</text>
+<wode-navigation/>

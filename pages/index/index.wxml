@@ -1,43 +1,38 @@
-<import src="../template/block/block" />
-<cu-custom bgColor="bg-gradual-blue">
-  <view slot="content">菜图</view>
-</cu-custom>
+<home-navigation />
 
 <view class="home">
-  <view class="home_search">
-    <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
-  </view>
+	<view class="home_search">
+		<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+	</view>
 
-  <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true"
-    autoplay="true" interval="5000" duration="500">
-    <swiper-item wx:for="{{swiperList}}" wx:key>
-      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover"
-        wx:if="{{item.type=='video'}}"></video>
-    </swiper-item>
-  </swiper>
+	<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+		<swiper-item wx:for="{{swiperList}}" wx:key>
+			<image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+			<video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+		</swiper-item>
+	</swiper>
 
-  <view class="home_block">
-    <home-block class="home_block_view" wx:for="{{titleList}}" wx:key my-property="{{item}}" />
-  </view>
+	<view class="home_block">
+		<home-block class="home_block_view" wx:for="{{titleList}}" wx:key my-property="{{item}}" />
+	</view>
 
-  <view class="home_hot">
-    <view class="home_hot_top">
-      <view class="home_hot_top_left">热门推荐</view>
-      <view class="home_hot_top_right">查看全部</view>
-    </view>
-    <view class="home_hot_imgageList">
-      <view class="home_hot_imgage" wx:for="{{imgagHot}}" wx:key>
-        <image src="{{item.url}}" />
-        <text class="home_hot_imgage_span">{{item.text}}</text>
-      </view>
-    </view>
-  </view>
+	<view class="home_hot">
+		<view class="home_hot_top">
+			<view class="home_hot_top_left">热门推荐</view>
+			<view class="home_hot_top_right">查看全部</view>
+		</view>
+		<view class="home_hot_imgageList">
+			<view class="home_hot_imgage" wx:for="{{imgagHot}}" wx:key>
+				<image src="{{item.url}}" />
+				<text class="home_hot_imgage_span">{{item.text}}</text>
+			</view>
+		</view>
+	</view>
 
-  <view class="home_parting"></view>
+	<!-- <view class="home_parting"></view> -->
 
-  <view class="home_week">
-    <view class="home_week_title">—— 本周佳作 ——</view>
-    <view></view>
-  </view>
+	<view class="home_week">
+		<view class="home_week_title">—— 本周佳作 ——</view>
+		<home-card wx:for="{{weekList}}" class="home_week_list" wx:key week-item="{{item}}"/>
+	</view>
 </view>

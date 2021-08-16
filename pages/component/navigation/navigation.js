@@ -1,10 +1,10 @@
-// pages/component/card/card.js
+// pages/component/navigation/navigation.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    weekItem: Object,
+
   },
 
   /**

@@ -1,2 +1,12 @@
 <!--pages/component/card/card.wxml-->
-<text>pages/component/card/card.wxml</text>
+<view class="component_card">
+	<image class="component_card_image" src="{{weekItem.url}}"></image>
+	<view class="component_card_title">
+		<text>{{weekItem.title}}</text>
+	</view>
+  <view class="component_card_dateil">
+    <text>{{weekItem.name}}</text>
+    <text>{{weekItem.collect}}收藏</text>
+    <text>{{weekItem.browse}}浏览</text>
+  </view>
+</view>

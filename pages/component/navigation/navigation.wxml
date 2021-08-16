@@ -1,0 +1,4 @@
+<import src="../template/block/block" />
+<cu-custom bgColor="bg-gradual-blue">
+	<view slot="content">菜图</view>
+</cu-custom>

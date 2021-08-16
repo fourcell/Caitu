@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "home-block": "/pages/component/block/block"
+    "home-block": "/pages/component/block/block",
+    "home-card":"/pages/component/card/card",
+    "home-navigation": "/pages/component/navigation/navigation"
   }
 }

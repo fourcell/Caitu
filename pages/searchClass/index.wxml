@@ -1,2 +1,1 @@
-<!--pages/search_class/index.wxml-->
-<text>pages/search_class/index.wxml</text>>
+<search-navigation />

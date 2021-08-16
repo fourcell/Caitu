@@ -2,7 +2,7 @@
 // 获取应用实例
 const app = getApp()
 
-import { titleList, swiperList, imgagHot } from '../const/index'
+import { titleList, swiperList, imgagHot, WEEK_LIST } from '../../const/index'
 Page({
   data: {
     motto: 'Hello World',
@@ -16,6 +16,7 @@ Page({
     swiperList: swiperList, //轮播图
     titleList: titleList, //推送
     imgagHot: imgagHot, //热门推荐列表图
+    weekList: WEEK_LIST,  //本周佳作list
 
     inputShowed: false, //搜索框状态
     inputVal: '', //搜索框的值
