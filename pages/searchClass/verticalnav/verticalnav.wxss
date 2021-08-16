@@ -1,0 +1,47 @@
+/* pages/component/nav/nav.wxss */
+.seatchClass .VerticalNav.nav {
+  width: 200rpx;
+  white-space: initial;
+}
+
+.seatchClass .VerticalNav.nav .cu-item {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  margin: 0;
+  border: none;
+  height: 50px;
+  position: relative;
+}
+
+.seatchClass .VerticalNav.nav .cu-item.cur {
+  background-color: #f1f1f1;
+}
+.seatchClass .VerticalNav.nav .cu-item.cur::after {
+  content: "";
+  width: 8rpx;
+  height: 30rpx;
+  border-radius: 10rpx 0 0 10rpx;
+  position: absolute;
+  background-color: currentColor;
+  top: 0;
+  right: 0rpx;
+  bottom: 0;
+  margin: auto;
+}
+
+.seatchClass{
+  display: flex;
+  flex-direction: column;
+}
+
+.seatchClass .seatchClass_sticky{
+  height: 120rpx;
+}
+
+.seatchClass .VerticalBox{
+  display: flex;
+}
+.seatchClass .VerticalMain{
+  background-color: #f1f1f1;
+}

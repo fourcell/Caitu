@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/searchClass/verticalnav/verticalnav",
     "pages/index/index",
-    "pages/searchClass/index",
+    "pages/searchClass/home/index",
     "pages/wode/index",
     "pages/collect/index"
   ],
@@ -21,7 +22,7 @@
           "iconPath": "images/shouye2.png"
         },
         {
-          "pagePath": "pages/searchClass/index",
+          "pagePath": "pages/searchClass/verticalnav/verticalnav",
           "text": "分类",
           "selectedIconPath": "images/fenlei.png",
           "iconPath": "images/fenlei2.png"

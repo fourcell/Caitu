@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search-navigation": "/pages/component/navigation/navigation",
+    "search-sticky": "@miniprogram-component-plus/sticky"
+  }
+}
