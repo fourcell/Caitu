@@ -45,3 +45,20 @@
 .seatchClass .VerticalMain{
   background-color: #f1f1f1;
 }
+.seatchClass .VerticalMain .Verticalnav_Crazy{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 0;
+  background-color: #fff;
+}
+.seatchClass .VerticalMain .Verticalnav_Crazy .Verticalnav_list{
+  padding: 15rpx;
+}
+
+.seatchClass .VerticalMain .Verticalnav_Crazy .Verticalnav_list .content text{
+  text-align: center;
+  font-size: 26rpx;
+  color: #999;
+  display: block;
+  padding-top: 10rpx;
+}

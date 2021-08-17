@@ -1,4 +1,7 @@
 const app = getApp()
+
+import { class_materials } from '../../../const/search_class'
+
 Page({
   data: {
     StatusBar: app.globalData.StatusBar,
@@ -8,6 +11,7 @@ Page({
     MainCur: 0,
     VerticalNavTop: 0,
     list: [],
+    children: [],
     load: true
   },
   onLoad() {
@@ -15,19 +19,38 @@ Page({
       title: '加载中...',
       mask: true
     });
-    let list = [{}];
-    for (let i = 0; i < 26; i++) {
-      list[i] = {};
-      list[i].name = String.fromCharCode(65 + i);
-      list[i].id = i;
-    }
-    this.setData({
-      list: list,
-      listCur: list[0]
-    })
+    // let list = [{}];
+    // for (let i = 0; i < 26; i++) {
+    //   list[i] = {};
+    //   list[i].name = String.fromCharCode(65 + i);
+    //   list[i].id = i;
+    // }
+    // this.setData({
+    //   list: list,
+    //   listCur: list[0]
+    // })
     this.setData({
       search: this.search.bind(this)
     })
+    this.initList()
+  },
+  func(e){
+    console.log(e)
+  },
+  initList() {
+    const list = []
+    const children = []
+    class_materials.map((item, index) => {
+      list.push({
+        name: item.PrimaryName,
+        class_id: item.class_id,
+        id: index,
+      })
+
+      children.push(item.list)
+    })
+    console.log(children)
+    this.setData({ list, children, listCur: list[0] })
   },
   onReady() {
     wx.hideLoading()
