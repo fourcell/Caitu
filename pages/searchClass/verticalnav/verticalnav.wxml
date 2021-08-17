@@ -5,13 +5,13 @@
 <view class="seatchClass">
   <view class="VerticalBox">
     <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}"
-      style="height:calc(100vh - 220rpx)">
+      style="height:calc(100vh - 260rpx)">
       <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key bindtap='tabSelect'
         data-id="{{index}}">
         {{item.name}}
       </view>
     </scroll-view>
-    <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 220rpx)"
+    <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 260rpx)"
       scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
       <view class="padding-top padding-lr" wx:for="{{children}}" wx:for-item="dataItem" wx:key id="main-{{index}}">
         <view wx:for="{{dataItem}}" wx:for-item="dataTitle" wx:key>
